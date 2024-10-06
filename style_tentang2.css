@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #FDF4E4;
+}
+
+.header {
+    background-color: #FBF3D5;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo-image {
+    width: 270px;
+    height: auto;
+    padding: 5px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.search-bar input {
+    width: 410px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-bar input::placeholder {
+    text-align: center;
+}
+
+.search-icon {
+    font-size: 20px;
+}
+
+/* Navigation */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.nav ul li a:hover, .nav ul li a.active {
+    background-color: #D5A574;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.grid-container-tentang {
+    display: grid;
+    grid-template-rows: 300px 100px 100px;
+    height: auto;
+    width: 100%;
+
+}
+
+.penjelasan {
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.image-column {
+    flex: 1; /* Kolom gambar mengambil ruang yang sama */
+    text-align: center; /* Centerkan gambar */
+}
+
+.text-column {
+    flex: 1; /* Kolom teks mengambil ruang yang sama */
+    padding-left: 20px; /* Jarak antara gambar dan teks */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.penjelasan img {
+    width: 300px; /* Sesuaikan lebar gambar */
+    height: auto; /* Pastikan proporsi gambar tetap */
+    border-radius: 50%; /* Membuat gambar menjadi bulat jika diinginkan */
+}
+
+.penjelasan h2 {
+    margin: 10px 0 5px; /* Jarak untuk judul */
+    font-size: 24px; /* Ukuran font untuk judul */
+    font-style: italic;
+}
+
+.penjelasan p {
+    font-size: 16px; /* Ukuran font untuk deskripsi */
+    color: #555; /* Warna teks untuk deskripsi */
+}
+
+
+.judul-tim-kami {
+    text-align: center;
+    margin: 0px;
+    font-weight: 400;
+}
+.tim-kami {
+    display: grid;
+    grid-template-rows: repeat(2, auto); /* 2 baris otomatis */
+    justify-items: center; /* Centerkan item dalam grid */
+    padding: 20px; /* Padding di dalam kontainer */
+}
+
+.tim-row {
+    display: flex; /* Menggunakan Flexbox untuk baris */
+    justify-content: space-evenly; /* Mendistribusikan elemen dengan jarak yang sama */
+    width: 100%; /* Pastikan baris menggunakan lebar penuh */
+}
+
+.team-member {
+    text-align: center; /* Centerkan teks di bawah gambar */
+}
+
+.team-photo {
+    width: 100px; /* Atur lebar foto */
+    height: 100px; /* Atur tinggi foto agar bulat */
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    object-fit: cover; /* Memastikan gambar tetap terjaga proporsinya */
+}
+
+.team-name {
+    margin-top: 10px; /* Jarak antara foto dan nama */
+    font-size: 14px; /* Ukuran font untuk nama */
+    color: #333; /* Warna teks, bisa disesuaikan */
+}
+
+
+
+/* Baris Ketiga - Kontainer Sosial Media */
+.social-media-container {
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    justify-content: space-evenly; /* Memisahkan div kiri dan kanan */
+    align-items: center; /* Vertikal center */
+    padding: 20px; /* Padding untuk kontainer */
+}
+
+/* Kontainer Logo */
+.logo-container {
+    flex: 1; /* Mengambil ruang yang sama */
+    text-align: center; /* Centerkan logo */
+}
+
+.logo-image {
+    width: 270px; /* Sesuaikan lebar logo */
+    height: auto; /* Pastikan proporsi logo tetap */
+}
+
+/* Kontainer Daftar Sosial Media */
+.social-media-list {
+    flex: 1; /* Mengambil ruang yang sama */
+    background-color: #D5A574; /* Warna latar belakang coklat */
+    padding: 20px; /* Padding di dalam div */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Daftar Sosial Media */
+.social-media-list h3 {
+    text-align: center; /* Centerkan judul */
+}
+
+.social-media-list ul {
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 10px 0 0; /* Jarak untuk daftar */
+}
+
+.social-media-list li {
+    display: flex; /* Menggunakan Flexbox untuk item daftar */
+    align-items: center; /* Vertikal center */
+    margin: 10px 0; /* Jarak antar item */
+}
+
+.social-media-list img {
+    width: 20px; /* Ukuran icon */
+    height: auto; /* Pastikan proporsi icon tetap */
+    margin-right: 10px; /* Jarak antara icon dan nama */
+}
+
+
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
